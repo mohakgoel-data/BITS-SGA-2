@@ -1,0 +1,15 @@
+mkdir -p submissions
+echo "print('Hello World')" > submissions/student1.py
+echo "print('Hello World')" > submissions/student2.py   
+echo "print('Assignment 2 code')" > submissions/student3.py
+echo "print('Hello World')" > submissions/student4.py  
+
+chmod +x duplicate_checker.sh
+
+./duplicate_checker.sh
+
+cat report.txt
+
+cat errors.log
+
+ls -l backup/
